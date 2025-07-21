@@ -1,8 +1,9 @@
-name: cron-workflow
+name: cron workflow
 
 on: 
   schedule:
     - cron: "0/5 * * * *"
+    - cron: "0/10 * * * *"
 
 jobs:
   cron-workflow:
