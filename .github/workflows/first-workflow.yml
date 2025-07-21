@@ -9,5 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run bash command
-        run: echo "first workflow from sawaf"
+        run: ls
+        shell: bash
+      - name: action checkout
+        uses: actions/checkout@v4
+      - name: after checkout
+        run: ls
         shell: bash
